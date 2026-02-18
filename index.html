@@ -1,0 +1,619 @@
+<!-- index.html (con ejemplos extra de TABLAS y FORMULARIOS) -->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="DevfClinica: atención médica moderna, rápida y humana. Consulta general, exámenes de sangre y farmacia." />
+    <title>DevfClinica — Clínica moderna y humana</title>
+
+    <!-- Google Font (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <!-- Header fijo -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-text">DevfClinica</span>
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Abrir menú</span>
+                    <span class="burger" aria-hidden="true"></span>
+                </button>
+
+                <div id="nav-menu" class="nav-menu" data-collapsible>
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <button class="btn btn-primary btn-small" type="button" data-open-modal="agenda">
+                        Agendar
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section id="inicio" class="section hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="badge">Clínica • Atención rápida • Experiencia humana</p>
+                    <h1>Tu salud, clara y sin complicaciones.</h1>
+                    <p class="lead">
+                        En DevfClinica cuidamos de ti con atención profesional, procesos ágiles y un trato cercano.
+                    </p>
+
+                    <div class="cta-row">
+                        <button class="btn btn-primary" type="button" data-open-modal="agenda">
+                            Agendar cita
+                        </button>
+                        <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+                    </div>
+
+                    <dl class="hero-meta" aria-label="Información rápida">
+                        <div class="meta-item">
+                            <dt>Tel</dt>
+                            <dd><a href="tel:+50622222222">+506 2222-2222</a></dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>WhatsApp</dt>
+                            <dd><a href="https://wa.me/50688888888" target="_blank" rel="noopener">+506 8888-8888</a>
+                            </dd>
+                        </div>
+                        <div class="meta-item">
+                            <dt>Email</dt>
+                            <dd><a href="mailto:hola@devfclinica.com">hola@devfclinica.com</a></dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="hero-card" aria-label="Tarjeta informativa">
+                    <div class="hero-card-top">
+                        <p class="hero-card-title">Agenda en 1 minuto</p>
+                        <p class="hero-card-sub">Elige el canal que prefieras: llamada, WhatsApp o formulario.</p>
+                    </div>
+                    <div class="hero-card-grid">
+                        <div class="pill">
+                            <span class="pill-dot" aria-hidden="true"></span>
+                            <span>Respuesta rápida</span>
+                        </div>
+                        <div class="pill">
+                            <span class="pill-dot" aria-hidden="true"></span>
+                            <span>Precios transparentes</span>
+                        </div>
+                        <div class="pill">
+                            <span class="pill-dot" aria-hidden="true"></span>
+                            <span>Equipo profesional</span>
+                        </div>
+                        <div class="pill">
+                            <span class="pill-dot" aria-hidden="true"></span>
+                            <span>Ubicación accesible</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" type="button" data-open-modal="agenda">
+                        Agendar ahora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <h2>Servicios</h2>
+                    <p class="muted">Lo esencial, con calidad clínica y atención moderna.</p>
+                </header>
+
+                <div class="cards" role="list">
+                    <article class="card reveal" role="listitem">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+                                <path d="M9 8h6M9 12h6M9 16h4" />
+                            </svg>
+                        </div>
+                        <h3>Consulta general</h3>
+                        <p>Evaluación médica completa para diagnóstico, tratamiento y seguimiento.</p>
+                        <p class="micro"><strong>Microdetalle:</strong> Atención el mismo día (según disponibilidad).
+                        </p>
+                        <a class="card-link" href="#contacto">Consultar disponibilidad</a>
+                    </article>
+
+                    <article class="card reveal" role="listitem">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10 2h4" />
+                                <path d="M12 2v6" />
+                                <path d="M9 8h6" />
+                                <path d="M10 8v11a2 2 0 0 0 4 0V8" />
+                                <path d="M10 14h4" />
+                            </svg>
+                        </div>
+                        <h3>Exámenes de sangre</h3>
+                        <p>Toma de muestras con procesos claros y resultados fáciles de entender.</p>
+                        <p class="micro"><strong>Microdetalle:</strong> Resultados en 24–48h.</p>
+                        <a class="card-link" href="#contacto">Agendar examen</a>
+                    </article>
+
+                    <article class="card reveal" role="listitem">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 7h12" />
+                                <path d="M7 7l1 14h8l1-14" />
+                                <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
+                                <path d="M11 11h2" />
+                                <path d="M12 10v2" />
+                            </svg>
+                        </div>
+                        <h3>Farmacia</h3>
+                        <p>Medicamentos y productos esenciales con asesoría y entrega rápida.</p>
+                        <p class="micro"><strong>Microdetalle:</strong> Stock de lo más frecuente.</p>
+                        <a class="card-link" href="#contacto">Preguntar por disponibilidad</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ✅ EJEMPLOS EXTRA: TABLAS + FORMULARIOS -->
+        <section id="ejemplos" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <h2>Ejemplos UI</h2>
+                    <p class="muted">Componentes típicos: tablas y formularios (solo ejemplos visuales).</p>
+                </header>
+
+                <div class="split">
+                    <!-- Tabla 1: Precios / servicios -->
+                    <div class="split-col">
+                        <div class="card reveal">
+                            <h3>Tabla: Servicios y tiempos</h3>
+                            <p class="muted small">Ejemplo de tabla responsive con scroll horizontal en móvil.</p>
+
+                            <div class="table-wrap" role="region" aria-label="Tabla de servicios" tabindex="0">
+                                <table class="table">
+                                    <caption class="sr-only">Servicios, tiempos y notas</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Servicio</th>
+                                            <th scope="col">Duración</th>
+                                            <th scope="col">Entrega</th>
+                                            <th scope="col">Notas</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Consulta general</th>
+                                            <td>20–40 min</td>
+                                            <td>Mismo día</td>
+                                            <td>Según disponibilidad</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Exámenes de sangre</th>
+                                            <td>10–15 min</td>
+                                            <td>24–48h</td>
+                                            <td>Incluye interpretación básica</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Farmacia</th>
+                                            <td>5–10 min</td>
+                                            <td>Inmediato</td>
+                                            <td>Consulta por stock</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p class="small muted" style="margin-top:.75rem;">
+                                Tip: en mobile, la tabla se desplaza horizontalmente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tabla 2: Horario semanal -->
+                    <div class="split-col">
+                        <div class="card reveal">
+                            <h3>Tabla: Horario semanal</h3>
+                            <p class="muted small">Ejemplo de tabla compacta para horarios.</p>
+
+                            <div class="table-wrap" role="region" aria-label="Tabla de horario" tabindex="0">
+                                <table class="table table-compact">
+                                    <caption class="sr-only">Horario semanal</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Día</th>
+                                            <th scope="col">Horario</th>
+                                            <th scope="col">Atención</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Lunes</th>
+                                            <td>8:00–18:00</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Martes</th>
+                                            <td>8:00–18:00</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Miércoles</th>
+                                            <td>8:00–18:00</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Jueves</th>
+                                            <td>8:00–18:00</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Viernes</th>
+                                            <td>8:00–18:00</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sábado</th>
+                                            <td>9:00–13:00</td>
+                                            <td>Limitado</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Domingo</th>
+                                            <td>Cerrado</td>
+                                            <td>—</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split" style="margin-top:1rem;">
+                    <!-- Form 1: Búsqueda rápida -->
+                    <div class="split-col">
+                        <form class="card reveal" aria-label="Formulario de búsqueda (ejemplo)">
+                            <h3>Formulario: Búsqueda rápida</h3>
+                            <p class="muted small">Ejemplo de búsqueda (no funcional, solo UI).</p>
+
+                            <div class="form-row">
+                                <label for="q">¿Qué necesitas?</label>
+                                <input id="q" name="q" type="search" placeholder="Ej: examen de sangre, farmacia..." />
+                            </div>
+
+                            <div class="form-row">
+                                <label for="city">Sede</label>
+                                <select id="city" name="city">
+                                    <option>San José</option>
+                                    <option>Heredia</option>
+                                    <option>Alajuela</option>
+                                </select>
+                            </div>
+
+                            <button class="btn btn-secondary" type="button">Buscar</button>
+                        </form>
+                    </div>
+
+                    <!-- Form 2: Mini pre-agenda -->
+                    <div class="split-col">
+                        <form class="card reveal" aria-label="Formulario de pre-agenda (ejemplo)">
+                            <h3>Formulario: Pre-agenda</h3>
+                            <p class="muted small">Ejemplo de step básico para agendar (sin backend).</p>
+
+                            <div class="form-row">
+                                <label for="pref-service">Servicio</label>
+                                <select id="pref-service" name="pref-service">
+                                    <option>Consulta general</option>
+                                    <option>Exámenes de sangre</option>
+                                    <option>Farmacia</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="date">Fecha preferida</label>
+                                <input id="date" name="date" type="date" />
+                            </div>
+
+                            <div class="form-row">
+                                <label for="time">Hora preferida</label>
+                                <input id="time" name="time" type="time" />
+                            </div>
+
+                            <fieldset class="fieldset">
+                                <legend>Canal de confirmación</legend>
+                                <label class="radio">
+                                    <input type="radio" name="channel" value="WhatsApp" checked />
+                                    <span>WhatsApp</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="channel" value="Llamada" />
+                                    <span>Llamada</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="channel" value="Email" />
+                                    <span>Email</span>
+                                </label>
+                            </fieldset>
+
+                            <button class="btn btn-primary" type="button">Solicitar horario</button>
+                            <p class="small muted" style="margin:.75rem 0 0 0;">*Ejemplo UI: no envía datos.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /EJEMPLOS EXTRA -->
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="section section-alt">
+            <div class="container split">
+                <div class="split-col">
+                    <header class="section-head">
+                        <h2>Nosotros</h2>
+                        <p class="muted">Clínica de confianza: profesional, eficiente y humana.</p>
+                    </header>
+
+                    <ul class="bullets">
+                        <li class="reveal">
+                            <span class="bullet-icon" aria-hidden="true">✓</span>
+                            <span><strong>Profesionales:</strong> equipo capacitado y enfoque clínico
+                                responsable.</span>
+                        </li>
+                        <li class="reveal">
+                            <span class="bullet-icon" aria-hidden="true">✓</span>
+                            <span><strong>Rapidez:</strong> procesos claros, sin vueltas, con tiempos definidos.</span>
+                        </li>
+                        <li class="reveal">
+                            <span class="bullet-icon" aria-hidden="true">✓</span>
+                            <span><strong>Atención humana:</strong> te explicamos y te acompañamos en cada paso.</span>
+                        </li>
+                    </ul>
+
+                    <div class="callout reveal" role="note" aria-label="Compromiso">
+                        <p class="callout-title">Nuestra promesa</p>
+                        <p class="callout-text">Menos estrés, más claridad: información simple, decisiones seguras.</p>
+                    </div>
+                </div>
+
+                <aside class="split-col">
+                    <div class="info-box reveal" aria-label="Horario y ubicación">
+                        <h3>Horario / Ubicación</h3>
+                        <dl class="info-list">
+                            <div>
+                                <dt>Horario</dt>
+                                <dd>Lun–Vie 8:00–18:00 • Sáb 9:00–13:00</dd>
+                            </div>
+                            <div>
+                                <dt>Ubicación</dt>
+                                <dd>San José, Costa Rica (ejemplo)</dd>
+                            </div>
+                            <div>
+                                <dt>Contacto</dt>
+                                <dd>
+                                    <a href="tel:+50622222222">+506 2222-2222</a> •
+                                    <a href="mailto:hola@devfclinica.com">hola@devfclinica.com</a>
+                                </dd>
+                            </div>
+                        </dl>
+
+                        <button class="btn btn-primary btn-block" type="button" data-open-modal="agenda">
+                            Agendar
+                        </button>
+                        <p class="small muted">Tip: también puedes escribirnos por WhatsApp.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="section" aria-labelledby="testimonios-title">
+            <div class="container">
+                <header class="section-head">
+                    <h2 id="testimonios-title">Testimonios</h2>
+                    <p class="muted">Experiencias reales (nombres ficticios).</p>
+                </header>
+
+                <div class="cards testimonials" role="list">
+                    <figure class="card reveal" role="listitem">
+                        <blockquote class="quote">
+                            “Me atendieron rápido y me explicaron todo con calma. Súper profesionales.”
+                        </blockquote>
+                        <figcaption class="quote-meta">
+                            <span class="avatar" aria-hidden="true">AM</span>
+                            <div>
+                                <div class="quote-name">Ana M.</div>
+                                <div class="quote-sub muted">Consulta general</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card reveal" role="listitem">
+                        <blockquote class="quote">
+                            “Los resultados del laboratorio llegaron al día siguiente. Muy ordenado y claro.”
+                        </blockquote>
+                        <figcaption class="quote-meta">
+                            <span class="avatar" aria-hidden="true">CR</span>
+                            <div>
+                                <div class="quote-name">Carlos R.</div>
+                                <div class="quote-sub muted">Exámenes de sangre</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card reveal" role="listitem">
+                        <blockquote class="quote">
+                            “La farmacia me resolvió de una. Me asesoraron bien y sin presión.”
+                        </blockquote>
+                        <figcaption class="quote-meta">
+                            <span class="avatar" aria-hidden="true">LP</span>
+                            <div>
+                                <div class="quote-name">Laura P.</div>
+                                <div class="quote-sub muted">Farmacia</div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section section-alt">
+            <div class="container split">
+                <div class="split-col">
+                    <header class="section-head">
+                        <h2>Contacto</h2>
+                        <p class="muted">Cuéntanos qué necesitas y te respondemos pronto.</p>
+                    </header>
+
+                    <form id="contact-form" class="form card" novalidate aria-describedby="form-hint">
+                        <p id="form-hint" class="small muted">
+                            Campos requeridos. No enviamos a backend: es una simulación.
+                        </p>
+
+                        <div class="form-row">
+                            <label for="name">Nombre <span aria-hidden="true">*</span></label>
+                            <input id="name" name="name" type="text" autocomplete="name" required
+                                placeholder="Tu nombre" />
+                            <p class="field-error" data-error-for="name" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Teléfono <span aria-hidden="true">*</span></label>
+                            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required
+                                placeholder="+506 8888-8888" />
+                            <p class="field-error" data-error-for="phone" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="service">Servicio <span aria-hidden="true">*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="Consulta general">Consulta general</option>
+                                <option value="Exámenes de sangre">Exámenes de sangre</option>
+                                <option value="Farmacia">Farmacia</option>
+                            </select>
+                            <p class="field-error" data-error-for="service" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Mensaje <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Ej: Quiero agendar para mañana en la tarde."></textarea>
+                            <p class="field-error" data-error-for="message" aria-live="polite"></p>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <aside class="split-col">
+                    <div class="card contact-direct reveal" aria-label="Contacto directo y redes">
+                        <h3>Contacto directo</h3>
+
+                        <ul class="contact-list">
+                            <li>
+                                <span class="contact-label">Tel:</span>
+                                <a href="tel:+50622222222">+506 2222-2222</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">WhatsApp:</span>
+                                <a href="https://wa.me/50688888888" target="_blank" rel="noopener">+506 8888-8888</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:hola@devfclinica.com">hola@devfclinica.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="divider" aria-hidden="true"></div>
+
+                        <h3>Redes</h3>
+                        <div class="social">
+                            <a class="social-link" href="#" aria-label="Instagram (placeholder)">Instagram</a>
+                            <a class="social-link" href="#" aria-label="Facebook (placeholder)">Facebook</a>
+                        </div>
+
+                        <div class="divider" aria-hidden="true"></div>
+
+                        <button class="btn btn-secondary btn-block" type="button" data-open-modal="agenda">
+                            Opciones para agendar
+                        </button>
+                        <p class="small muted">Preferimos WhatsApp para confirmar horarios.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="container footer-inner">
+                <p class="small muted">© <span id="year"></span> DevfClinica. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal: Agendar -->
+    <div class="modal" id="agenda-modal" role="dialog" aria-modal="true" aria-labelledby="agenda-title"
+        aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-panel" role="document">
+            <div class="modal-head">
+                <h2 id="agenda-title">Agendar</h2>
+                <button class="icon-btn" type="button" aria-label="Cerrar" data-close-modal>
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <p class="muted">Elige la opción que te sea más cómoda:</p>
+
+            <div class="modal-actions">
+                <a class="btn btn-primary btn-block" href="tel:+50622222222">Llamar</a>
+                <a class="btn btn-secondary btn-block" href="https://wa.me/50688888888" target="_blank"
+                    rel="noopener">WhatsApp</a>
+                <a class="btn btn-ghost btn-block" href="#contacto" data-close-modal>Formulario</a>
+            </div>
+
+            <p class="small muted">Horario sugerido: Lun–Vie 8:00–18:00.</p>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" aria-live="polite" aria-atomic="true" hidden>
+        <div class="toast-inner">
+            <p class="toast-title" id="toast-title">Listo</p>
+            <p class="toast-msg" id="toast-msg">Tu mensaje fue enviado.</p>
+            <button class="icon-btn" type="button" aria-label="Cerrar notificación" data-toast-close>
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>

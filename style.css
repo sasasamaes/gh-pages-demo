@@ -1,0 +1,94 @@
+/* styles.css (sin cambios obligatorios, pero agrega estos estilos si quieres que se vean top) */
+
+/* ✅ Añade al final de tu styles.css */
+
+.table-wrap {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: auto;
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+}
+
+.table-wrap:focus-visible {
+    outline: none;
+    box-shadow: var(--focus);
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 520px;
+    /* fuerza scroll horizontal en móvil */
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    background: var(--bg-alt);
+    color: var(--text);
+    font-weight: 800;
+    text-align: left;
+    padding: .85rem .9rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.table tbody td,
+.table tbody th {
+    padding: .85rem .9rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.table tbody th {
+    color: var(--text);
+    font-weight: 800;
+}
+
+.table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.04);
+}
+
+.table tbody tr:last-child td,
+.table tbody tr:last-child th {
+    border-bottom: none;
+}
+
+.table-compact {
+    min-width: 420px;
+}
+
+.table-compact thead th,
+.table-compact tbody td,
+.table-compact tbody th {
+    padding: .7rem .8rem;
+}
+
+.fieldset {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .85rem .9rem;
+    margin: .25rem 0 .9rem 0;
+    background: var(--bg-alt);
+}
+
+.fieldset legend {
+    padding: 0 .35rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .4rem 0;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.radio input {
+    width: 18px;
+    height: 18px;
+}
